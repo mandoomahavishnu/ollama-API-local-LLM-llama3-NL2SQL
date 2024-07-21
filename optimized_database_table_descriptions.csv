@@ -1,0 +1,15 @@
+TABLE,TABLE DESCRIPTION,COLUMN NAME,COLUMN DESCRIPTION,SYNONYMS,KEYWORDS
+products,Stores product or item description including item number,item_num,item or product number,"product, item, item number, item num","item, product"
+products,Stores product or item description including item number,description,description of product or item,description,description
+products,Stores product or item description including item number,UPC_M,UPC number for master case,"upc, upc number","upc, master case"
+products,Stores product or item description including item number,UPC_U,UPC number for individual unit,"upc, upc number","upc, unit"
+products,Stores product or item description including item number,MASTER_QTY,quantity of units in one master case,"per box, master unit",per box
+products,Stores product or item description including item number,INNER_QTY,quantity of inner cases per master case,inner,inner
+products,Stores product or item description including item number,BOX_WEIGHT,master case weight in pounds,weight,"box, carton, dimension"
+products,Stores product or item description including item number,BOX_DEPTH,master case depth measurement in inches,dimension,"box, carton, dimension"
+products,Stores product or item description including item number,BOX_WIDTH,master case width measurement in inches,dimension,"box, carton, dimension"
+products,Stores product or item description including item number,BOX_HEIGHT,master case height measurement in inches,dimension,"box, carton, dimension"
+user,Information about users,username,unique user name,user,user
+user,Information about users,password,unique password,"password, p/w",password
+user,Information about users,lname,last name of user,last name,name
+user,Information about users,fname,first name of user,first name,name
