@@ -51,13 +51,13 @@ def get_database_schema(table_names=None):
         query = f"""
             SELECT table_name, column_name, data_type, is_nullable, column_key, column_default, extra, column_comment
             FROM information_schema.columns 
-            WHERE table_schema = 'creme' AND table_name IN ({table_names_str})
+            WHERE table_schema = 'your database' AND table_name IN ({table_names_str})
         """
     else:
         query = """
             SELECT table_name, column_name, data_type, is_nullable, column_key, column_default, extra, column_comment
             FROM information_schema.columns 
-            WHERE table_schema = 'creme'
+            WHERE table_schema = 'your database'
         """
     cursor.execute(query)
     schema = cursor.fetchall()
@@ -79,7 +79,7 @@ table_names = [
 ]
 
 # Load table descriptions
-descriptions = load_table_descriptions('path to your table description file')  # Adjust the file path as needed
+descriptions = load_table_descriptions('path to your table description file.csv')  # Adjust the file path as needed
 
 # Create FAISS index for few_shot_examples
 def create_faiss_index(examples):
